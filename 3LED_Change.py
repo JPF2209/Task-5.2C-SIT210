@@ -103,13 +103,13 @@ bSlider.grid(row = 1,column = 1)
 #For red button and slider
 redButton = Button(win, text = 'Turn Red LED On', font = myFont, command = lambda: setCondition("red"), bg = 'red', height = 1, width = 24)
 redButton.grid(row = 2, column = 2)
-rSlider = Scale(win, from_=0, to=100, orient=HORIZONTAL, bg = 'red', command=bsetPwm)
+rSlider = Scale(win, from_=0, to=100, orient=HORIZONTAL, bg = 'red', command=rsetPwm)
 rSlider.grid(row = 2,column = 1)
 
 #For green button and slider
 greenButton = Button(win, text = 'Turn Green LED On', font = myFont, command = lambda: setCondition("green"), bg = 'green', height = 1, width = 24)
 greenButton.grid(row = 3, column = 2)
-gSlider = Scale(win, from_=0, to=100, orient=HORIZONTAL, bg = 'green', command=bsetPwm)
+gSlider = Scale(win, from_=0, to=100, orient=HORIZONTAL, bg = 'green', command=gsetPwm)
 gSlider.grid(row = 3,column = 1)
 
 #Exit button
